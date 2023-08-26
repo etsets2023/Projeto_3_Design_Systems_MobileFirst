@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinzanav:#F8F5FF;
+    --black:#000;
+    --roxobotao:#845EF7;
+    --branco: #FFF;
+    --cinzasobre:#FAFAFA;
+    --borda:#D3D7DB;
+    --pretoinout:#30373E;
+    --cinzaplace:#ADB5BD;
+}
+
+.hide_mobile {
+    display: none;
+}
+
+nav {
+    border-radius: 0px 0px 32px 32px;
+    background: var(--cinzanav);
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;   
+}
+
+.nav_menu_burguer, .nav_lupa {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.projetos {
+    width: 100%;
+    padding: 15px 15px 20px 15px;
+    display: flex;
+
+}
+
+.projetos_imagem {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projetos_texto {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.projetos_texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.projetos_texto p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%; 
+    width: 201px;
+    margin-bottom: 20px;
+}
+
+.projetos button {
+    border-radius: 8px;
+    background: var(--roxobotao);
+    padding: 13px 32px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sobre {
+    width: 100%;
+    padding: 20px 15px 15px 15px;
+    background-color: var(--cinzasobre);
+}
+
+.title {
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+}
+
+.lorem {
+    width: 100%;
+    padding: 15px;
+}
+
+.lorem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lorem_conteudo_texto {
+    border-radius: 16px;
+    border: 1px solid var(--borda);
+    background: var(--branco);
+    padding: 15px;
+}
+
+.lorem_conteudo_texto h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 180%; 
+}
+
+.lorem_conteudo_texto button {
+    width: 260px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid var(--roxobotao);
+    padding: 13px 32px;
+    color: var(--roxobotao);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; 
+    margin: 24px 0 41px 0;
+    cursor: pointer;
+}
+
+.outros {
+    width: 100%;
+    padding: 0 15px 15px 15px;
+}
+
+.outros_conteudo_item {
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.outros_conteudo_item img {
+    margin-bottom: 15px;
+}
+
+.outros_conteudo_item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 180%; 
+    margin-bottom: 15px;
+}
+
+.outros_conteudo_item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+}
+
+.trabalhamos {
+    width: 100%;
+    padding: 15px;
+}
+
+.trabalhamos img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.trabalhamos h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.trabalhamos p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    margin-bottom: 20px;
+}
+
+.botao_mais {
+    border-radius: 8px;
+    background: var(--roxobotao);
+    padding: 13px 32px;
+    width: 137px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botato_contrate {
+    border-radius: 8px;
+    border: 1px solid var(--roxobotao);
+    padding: 13px 32px;
+    width: 137px;
+    color: var(--roxobotao);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; 
+    padding: 5px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.vantagens {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cinzasobre);
+}
+
+.vantagens_conteudo_item {
+    display: flex;
+    border-radius: 16px;
+    border: 1px solid var(--borda);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.vantagens img {
+    width: 40px;
+    height: 40px;
+}
+
+.vantagens p {
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+    margin-left: 20px;
+}
+
+.servicos {
+    width: 100%;
+    padding: 15px;
+}
+
+.conteudo_item_imagem {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.servicos_conteudo_item {
+    width: 100%;
+    background-color: var(--cinzasobre);
+    border-radius: 8px;
+    margin-bottom: 15px; 
+    padding-bottom: 15px;
+}
+
+.conteudo_item_detalhe {
+    display: flex;
+    gap:130px;
+}
+
+.servicos h3 {
+    color: #5A27F2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700; 
+    margin-left: 15px;
+}
+
+.servicos p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+    margin-left: 15px;
+}
+
+.servicos a {
+    cursor: pointer;
+}
+
+.formulario {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--black);
+}
+
+.title_form {
+    color: var(--branco);
+}
+
+.formulario_item, .formulario select {
+    width: 100%;
+    height: 52px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background-color: var(--pretoinout);
+    border: 1px solid var(--cinzaplace);
+}
+.check_conteudo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type=placeholder], [type=date] {
+    color: var(--cinzaplace);
+}
+
+.cidade {
+    color: var(--cinzaplace);
+}
+
+input[type=checkbox]  {
+    width: 24px;
+    height: 24px;
+}
+
+.check_label {
+    color: var(--branco);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.formulario button {
+    border-radius: 8px;
+    background: var(--roxobotao);
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.formulario p {
+    color: var(--branco);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+}
+
+footer {
+    width: 100%;
+    padding: 15px 15px 30px 15px;
+    background-color: var(--black)
+}
+
+.footer_logo {
+    margin-left: 30px;
+}
+
+li, a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; 
+}
+
+.footer_sociais {
+    margin-top: 20px;  
+}
+
+.footer_sociais img {
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.lista_vant {
+    color: var(--roxobotao);
+}
+
+footer p {
+    color: var(--branco);
+    margin: 0 0 30px 5px;
+}
+
+.footer_sociais {
+    align-self: flex-end;
+}
+
+
+
+
+
+
