@@ -15,6 +15,7 @@
     --borda:#D3D7DB;
     --pretoinout:#30373E;
     --cinzaplace:#ADB5BD;
+    --roxoservicos:#5A27F2;
 }
 
 .hide_mobile {
@@ -121,6 +122,8 @@ nav {
     border: 1px solid var(--borda);
     background: var(--branco);
     padding: 15px;
+    height: 225px;
+
 }
 
 .lorem_conteudo_texto h3 {
@@ -264,7 +267,7 @@ nav {
 
 .conteudo_item_imagem {
     width: 100%;
-    border-radius: 8px 8px 0 0;
+    border-radius: 16px 16px 0 0;
     margin-bottom: 15px;
 }
 
@@ -282,7 +285,7 @@ nav {
 }
 
 .servicos h3 {
-    color: #5A27F2;
+    color: var(--roxoservicos);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 700; 
@@ -382,7 +385,7 @@ footer {
     margin-left: 30px;
 }
 
-li, a {
+a {
     text-decoration: none;
     margin-bottom: 10px;
     color: var(--branco);
@@ -411,6 +414,7 @@ li, a {
 footer p {
     color: var(--branco);
     margin: 0 0 30px 5px;
+  
 }
 
 .footer_sociais {
