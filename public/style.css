@@ -749,13 +749,17 @@ footer p {
 }
 
 .sobre_paragrafo {
-  animation: fade ease 10s forwards;
+  animation: fade ease 20s forwards;
   opacity: 0;
 }
 
 @keyframes fade {
   0% {
     opacity: 0, 2;
+  }
+
+  25%{
+    opacity: 0,3;
   }
   50% {
     opacity: 0, 5;
