@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass ./style.scss:dist/style.css",
-    "dev": "sass --watch --color style.scss:dist/style.css" 
+    "dev": "sass --watch --color ./style.scss:dist/style.css" 
   },
   "author": "Elaine Tavares",
   "license": "ISC",
