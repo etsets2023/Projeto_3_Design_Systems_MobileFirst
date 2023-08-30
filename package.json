@@ -1,0 +1,14 @@
+{
+  "name": "projeto_3_design_systems_mobilefirst-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./style.scss:dist/style.css"
+  },
+  "author": "Elaine Tavares",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

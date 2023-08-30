@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/mobile_first.css">
+    <link rel="stylesheet" href="./dist/style.css">
     <title>Design System</title>
 </head>
 <body>
@@ -31,23 +31,25 @@
             <div class="projetos_texto">
                <h2>Projetos de alta complexidade</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               <button>Fazer o cálculo</button>
+               <button class="projetos_botao">Fazer o cálculo</button>
             </div>   
         </section>
 
         <section class="sobre">
             <h1 class="title">Sobre nós</h1>
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            <div class="sobre_paragrafo">
+               <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
+            </div>
+            </section>
 
         <section class="lorem">
             <div class="lorem_conteudo"> 
                 <img src="./assets/sobre/sobre.png" alt="profissionais">
                 <div class="lorem_conteudo_texto">
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-                    <button>Mais</button>
+                    <button class="lorem_botao">Mais</button>
                </div>
             </div>
         </section>
@@ -128,7 +130,7 @@
                     <img class="conteudo_item_imagem" src="./assets/servicos/imagem_1.png" alt="oficina">
                     <div class="conteudo_item_detalhe">
                         <h3>Lorem ipsum</h3>
-                        <a href=""><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
+                        <a href="" class="flecha"><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -136,7 +138,7 @@
                     <img class="conteudo_item_imagem" src="./assets/servicos/imagem_2.png" alt="tratorzinho">
                     <div class="conteudo_item_detalhe">
                         <h3>Lorem ipsum</h3>
-                        <a href=""><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
+                        <a href="" class="flecha"><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -144,7 +146,7 @@
                     <img class="conteudo_item_imagem" src="./assets/servicos/imagem_3.png" alt="marcenaria">
                     <div class="conteudo_item_detalhe">
                         <h3>Lorem ipsum</h3>
-                        <a href=""><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
+                        <a href="" class="flecha"><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -152,7 +154,7 @@
                     <img class="conteudo_item_imagem" src="./assets/servicos/imagem_4.png" alt="andaime">
                     <div class="conteudo_item_detalhe">
                         <h3>Lorem ipsum</h3>
-                        <a href=""><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
+                        <a href="" class="flecha"><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -160,7 +162,7 @@
                     <img class="conteudo_item_imagem" src="./assets/servicos/imagem_5.png" alt="faíscas">
                     <div class="conteudo_item_detalhe">
                         <h3>Lorem ipsum</h3>
-                        <a href=""><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
+                        <a href="" class="flecha"><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -168,7 +170,7 @@
                     <img class="conteudo_item_imagem" src="./assets/servicos/imagem_6.png" alt="mulher sorrindo">
                     <div class="conteudo_item_detalhe">
                         <h3>Lorem ipsum</h3>
-                        <a href=""><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
+                        <a href="" class="flecha"><img src="./assets/servicos/Flecha 32px.png" alt="seta"></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -179,21 +181,21 @@
             <h1 class="title title_form">Envie sua aplicação</h1>
             <form>
                 <div>
-                    <input class="formulario_item" type="text" placeholder="Nome*">
+                    <input class="formulario_item" type="text" placeholder="Nome*" required>
                 </div>
                 <div>
-                    <select class="cidade">
+                    <select class="cidade formulario_item" required>
                         <option selected disabled value="">Cidade</option>
                     </select>
                 </div>
                 <div>
-                    <input class="formulario_item" type="date" name="datas">
+                    <input class="formulario_item" type="date" name="datas" required>
                 </div>
                 <div>
-                    <input class="formulario_item" type="email" placeholder="Email*">
+                    <input class="formulario_item" type="email" placeholder="Email*" required>
                 </div>
                 <div>
-                    <input class="formulario_item" type="text" placeholder="Mensagem">
+                    <input class="formulario_item" type="text" placeholder="Mensagem" required>
                 </div>
 
                 <div class="concluir">
@@ -202,7 +204,7 @@
                        <label class="check_label">Concordo com a Política de privacidade</label>
                    </div>
                    <div class="concluir_botao botaobotao">
-                       <button>Concluir</button>
+                       <button class="botao_concluir">Concluir</button>
                    </div>
                 </div>
 
@@ -217,17 +219,17 @@
            <p class="footer_texto">design systems</p>
            <div class="texto_detalhes">
                 <div class="footer_lista lista1">
-                    <p><a href="">Sobre nós</a></p>
-                    <p><a href=""><u>Como trabalhamos</u></a></p>
-                    <p><a href="" class="lista_vant"><u>Vantagens</u></a></p>
+                    <p class="footer_nav"><a href="">Sobre nós</a></p>
+                    <p class="footer_nav"><a href=""><u>Como trabalhamos</u></a></p>
+                    <p class="footer_nav"><a href="" class="lista_vant"><u>Vantagens</u></a></p>
                 </div>
                 <div class="lista2">
-                    <p><a href="">Serviços</a></p>
-                    <p><a href="">Contatos</a></p>
+                    <p class="footer_nav"><a href="">Serviços</a></p>
+                    <p class="footer_nav"><a href="">Contatos</a></p>
                 </div>         
                  <div class="footer_sociais social">
-                    <img src="./assets/footer/instagram.png" alt="instagram logo">
-                    <img src="./assets/footer/facebook.png" alt="facebook logo">
+                    <img class="social" src="./assets/footer/instagram.png" alt="instagram logo">
+                    <img class="social" src="./assets/footer/facebook.png" alt="facebook logo">
                 </div>
            </div>
        </div>
