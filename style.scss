@@ -691,23 +691,27 @@ footer p {
     
     }
 
-   .nav_menu_burguer {
-    transition: all 2s;
+    .nav_menu_burguer {
+        animation: mudanca 2s linear infinite;
+       }
 
-    &:hover {
-        transform: scale(1.3);
-        background: var(--roxobotao);
+    .nav_lupa {
+        animation: mudanca 2s linear infinite;
+       }
+       
+    
+       @keyframes mudanca {
+        0% {
+            box-shadow: 0 0 10px 0 var(--roxobotao);
+            scale: (1.3);
+        }
+
+        100% {
+            box-shadow: 0 0 10px 0 var(--branco);
+            scale: (0.5);
+        }
+    
     }
-   }
-
-   .nav_lupa {
-    transition: all 2s;
-
-    &:hover {
-        transform: scale(1.3);
-        background: var(--roxobotao);
-    }
-   }
 
    .projetos_botao {
     animation: botprojetos 2s linear infinite;
@@ -762,13 +766,8 @@ footer p {
    }
 
    .flecha {
-       transition: all 2s;
-
-    &:hover {
-        transform: scale(1.3);
-        box-shadow: 0 0 10px 0 var(--roxobotao);
-    }
-   }
+        animation: mudanca 2s linear infinite;
+       }
    
    .vantagens_conteudo_item {
        transition: all 2s;
@@ -779,7 +778,7 @@ footer p {
     }
    }
 
-   .card-detalhe {
+   .servicos_conteudo_item {
     transition: all 2s;
 
     &:hover {
@@ -802,7 +801,7 @@ footer p {
     }
   }
 
-  .sobre_paragrafo {
+  .projetos_texto {
         opacity: 0;
         animation: fade-in 1s ease-in forwards, fade-out 4s 1s ease-out forwards infinite; 
   }
@@ -822,8 +821,12 @@ footer p {
     }
   }
   
-.formulario_item:invalid {
-    animation: pulse 2s infinite;
+.formulario_item {
+    transition: all 2s;
+
+    &:invalid {
+        animation: pulse 2s infinite;
+    }
 }
 
 @keyframes pulse {
@@ -843,7 +846,7 @@ footer p {
 	}
 }
 
-.lorem_conteudo_texto{
+.lorem_conteudo {
         transition: all 2s;
 
         &:hover {
@@ -851,8 +854,7 @@ footer p {
         }
     }
 
-    
-.trabalhamos-texto{
+.trabalhamos_conteudo{
     transition: all 2s;
 
     &:hover {
@@ -864,8 +866,7 @@ footer p {
     transition: all 2s;
 
     &:hover {
-       border: 4px solid blue;
-       fill: blue;
+       box-shadow: 0 0 10px 0 blue;
     }
 }
 

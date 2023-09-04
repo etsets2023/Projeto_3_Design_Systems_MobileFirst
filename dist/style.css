@@ -651,21 +651,23 @@ footer p {
   }
 }
 .nav_menu_burguer {
-  transition: all 2s;
-}
-.nav_menu_burguer:hover {
-  transform: scale(1.3);
-  background: var(--roxobotao);
+  animation: mudanca 2s linear infinite;
 }
 
 .nav_lupa {
-  transition: all 2s;
-}
-.nav_lupa:hover {
-  transform: scale(1.3);
-  background: var(--roxobotao);
+  animation: mudanca 2s linear infinite;
 }
 
+@keyframes mudanca {
+  0% {
+    box-shadow: 0 0 10px 0 var(--roxobotao);
+    scale: 1.3;
+  }
+  100% {
+    box-shadow: 0 0 10px 0 var(--branco);
+    scale: 0.5;
+  }
+}
 .projetos_botao {
   animation: botprojetos 2s linear infinite;
 }
@@ -713,11 +715,7 @@ footer p {
 }
 
 .flecha {
-  transition: all 2s;
-}
-.flecha:hover {
-  transform: scale(1.3);
-  box-shadow: 0 0 10px 0 var(--roxobotao);
+  animation: mudanca 2s linear infinite;
 }
 
 .vantagens_conteudo_item {
@@ -728,10 +726,10 @@ footer p {
   box-shadow: 0 0 10px 0 var(--roxobotao);
 }
 
-.card-detalhe {
+.servicos_conteudo_item {
   transition: all 2s;
 }
-.card-detalhe:hover {
+.servicos_conteudo_item:hover {
   transform: translateY(-20px);
 }
 
@@ -748,7 +746,7 @@ footer p {
   color: var(--roxoservicos);
 }
 
-.sobre_paragrafo {
+.projetos_texto {
   opacity: 0;
   animation: fade-in 1s ease-in forwards, fade-out 4s 1s ease-out forwards infinite;
 }
@@ -765,6 +763,9 @@ footer p {
   100% {
     opacity: 0;
   }
+}
+.formulario_item {
+  transition: all 2s;
 }
 .formulario_item:invalid {
   animation: pulse 2s infinite;
@@ -784,17 +785,17 @@ footer p {
     box-shadow: 0 0 20px 0 red;
   }
 }
-.lorem_conteudo_texto {
+.lorem_conteudo {
   transition: all 2s;
 }
-.lorem_conteudo_texto:hover {
+.lorem_conteudo:hover {
   transform: translateY(-20px);
 }
 
-.trabalhamos-texto {
+.trabalhamos_conteudo {
   transition: all 2s;
 }
-.trabalhamos-texto:hover {
+.trabalhamos_conteudo:hover {
   transform: translateY(-20px);
 }
 
@@ -802,8 +803,7 @@ footer p {
   transition: all 2s;
 }
 .social_logo:hover {
-  border: 4px solid blue;
-  fill: blue;
+  box-shadow: 0 0 10px 0 blue;
 }
 
 /*# sourceMappingURL=style.css.map */
