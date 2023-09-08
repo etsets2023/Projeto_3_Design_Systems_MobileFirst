@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="../dist/style.css">
     <link rel="stylesheet" href="./style.css">
     <title>Design System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
         <nav>
             <div class="nav_menu">
-               <a href="" class="nav_menu_burguer"><img class="burger" src="./assets/header/Menu mobile.svg" alt="menu"></a>
+               <span class="material-symbols-outlined burger">menu</span>
                <div class="menu_disposicao"> 
                   <img class="nav_logo" src="./assets/header/logo.png" alt="logo">
-                  <div class="menu_burguer_botoes hide_mobile botoes">
+                  <div class="menu" id="menu">
                     <button>Sobre nós</button>
                     <button>Como trabalhamos</button>
                     <button>Vantagens</button>
@@ -22,7 +24,7 @@
                     <button>Contatos</button>
                   </div>
                 </div> 
-                <a href="" class="nav_lupa"><img class="lupa" src="./assets/header/search mobile.svg" alt="lupa"></a>
+                <span class="material-symbols-outlined lupa">search</span>
             </div>
         </nav>
     </header>
@@ -253,6 +255,8 @@
            </div>
        </div>
     </footer>
+
+    <script src="../js/menu.js"></script>
 </body>
 </html>
 

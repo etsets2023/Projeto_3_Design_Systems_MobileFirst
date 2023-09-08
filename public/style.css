@@ -17,7 +17,7 @@
   --roxoservicos:#5A27F2;
 }
 
-.hide_mobile {
+.menu {
   display: none;
 }
 
@@ -667,16 +667,16 @@ footer p {
   transition: all 2s;
 }
 .burger:hover {
-  box-shadow: 0px 0px 10px 0px var(--roxobotao);
-  transform: scale(1.3);
+  fill: var(--roxobotao);
+  transform: scale(2);
 }
 
 .lupa {
   transition: all 2s;
 }
 .lupa:hover {
-  box-shadow: 0px 0px 10px 0px var(--roxobotao);
-  transform: scale(1.3);
+  fill: --roxobotao;
+  transform: scale(2);
 }
 
 .projetos_botao {
@@ -729,8 +729,8 @@ footer p {
   transition: all 2s;
 }
 .flecha:hover {
-  box-shadow: 0px 0px 10px 0px var(--roxobotao);
-  transform: scale(1.3);
+  fill: var(--roxobotao);
+  transform: scale(2);
 }
 
 .vantagens_conteudo_item {
@@ -741,10 +741,10 @@ footer p {
   box-shadow: 0 0 10px 0 var(--roxobotao);
 }
 
-.servicos_conteudo_item {
+.card-detalhe {
   transition: all 2s;
 }
-.servicos_conteudo_item:hover {
+.card-detalhe:hover {
   transform: translateY(-20px);
 }
 
@@ -808,7 +808,7 @@ footer p {
 }
 
 .social_logo {
-  fill: blue;
+  border: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
