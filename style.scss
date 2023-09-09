@@ -302,8 +302,15 @@ nav {
     margin-left: 15px;
 }
 
-.servicos a {
-    cursor: pointer;
+.flechas {
+display: flex;
+flex-direction: column;
+}
+
+.seta {
+    position: absolute;
+    margin-top: 6px;
+    color: var(--branco);
 }
 
 .formulario {
@@ -421,15 +428,6 @@ footer p {
 .footer_sociais {
     align-self: flex-end;
 }
-
-.trabalhamos_conteudo{
-    transition: all 2s;
-
-    &:hover {
-        transform: translateY(-20px);
-    }
-}
-
 
 
 @media (min-width: 768px) {
@@ -697,15 +695,6 @@ footer p {
     .footer_lista, .lista2 {
         margin-top: 40px;
     }
-
-    .trabalhamos_conteudo{
-        transition: all 2s;
-    
-        &:hover {
-            transform: translateY(-20px);
-        }
-    }
-    
     
     }
 
@@ -713,16 +702,18 @@ footer p {
         transition: all 2s;
 
         &:hover {
-            fill:  var(--roxobotao);
+            filter: invert(31%) sepia(78%) saturate(1211%) hue-rotate(240deg) brightness(107%) contrast(106%);
             transform: scale(2);
+            cursor: pointer;
         }
        }
 
     .lupa {
         transition: all 2s;
         &:hover {
-            fill: (--roxobotao);
+            filter: invert(31%) sepia(78%) saturate(1211%) hue-rotate(240deg) brightness(107%) contrast(106%);
             transform: scale(2);
+            cursor: pointer;
         }
        }
        
@@ -781,9 +772,12 @@ footer p {
 
    .flecha {
         transition: all 2s;
-        &:hover {
-            fill:  var(--roxobotao);
-            transform: scale(2);
+
+    &:hover {
+        background-color: var(--roxobotao);
+        transform: scale(2);
+    border-radius: 10px;
+    cursor: pointer;
        }
     }
    
@@ -814,7 +808,7 @@ footer p {
        border-right: transparent ;
     }
 
-    &:focus {
+    &:active {
         color: var(--roxoservicos);
     }
   }
@@ -864,16 +858,11 @@ footer p {
 	}
 }
 
-.lorem_conteudo {
-        transition: all 2s;
-
-        &:hover {
-            transform: translateY(-20px);
-        }
-    }
-
 .social_logo {
-    fill: blue;
+    transition: all 2s;
+&:hover {
+    filter: invert(31%) sepia(78%) saturate(1211%) brightness(107%) contrast(106%);
+}
 }
 
 

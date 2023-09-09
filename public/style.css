@@ -299,8 +299,15 @@ nav {
   margin-left: 15px;
 }
 
-.servicos a {
-  cursor: pointer;
+.flechas {
+  display: flex;
+  flex-direction: column;
+}
+
+.seta {
+  position: absolute;
+  margin-top: 6px;
+  color: var(--branco);
 }
 
 .formulario {
@@ -417,13 +424,6 @@ footer p {
 
 .footer_sociais {
   align-self: flex-end;
-}
-
-.trabalhamos_conteudo {
-  transition: all 2s;
-}
-.trabalhamos_conteudo:hover {
-  transform: translateY(-20px);
 }
 
 @media (min-width: 768px) {
@@ -656,27 +656,23 @@ footer p {
   .footer_lista, .lista2 {
     margin-top: 40px;
   }
-  .trabalhamos_conteudo {
-    transition: all 2s;
-  }
-  .trabalhamos_conteudo:hover {
-    transform: translateY(-20px);
-  }
 }
 .burger {
   transition: all 2s;
 }
 .burger:hover {
-  fill: var(--roxobotao);
+  filter: invert(31%) sepia(78%) saturate(1211%) hue-rotate(240deg) brightness(107%) contrast(106%);
   transform: scale(2);
+  cursor: pointer;
 }
 
 .lupa {
   transition: all 2s;
 }
 .lupa:hover {
-  fill: --roxobotao;
+  filter: invert(31%) sepia(78%) saturate(1211%) hue-rotate(240deg) brightness(107%) contrast(106%);
   transform: scale(2);
+  cursor: pointer;
 }
 
 .projetos_botao {
@@ -729,8 +725,10 @@ footer p {
   transition: all 2s;
 }
 .flecha:hover {
-  fill: var(--roxobotao);
+  background-color: var(--roxobotao);
   transform: scale(2);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .vantagens_conteudo_item {
@@ -757,7 +755,7 @@ footer p {
   border-top: transparent;
   border-right: transparent;
 }
-.footer_nav:focus {
+.footer_nav:active {
   color: var(--roxoservicos);
 }
 
@@ -800,15 +798,11 @@ footer p {
     box-shadow: 0 0 20px 0 red;
   }
 }
-.lorem_conteudo {
+.social_logo {
   transition: all 2s;
 }
-.lorem_conteudo:hover {
-  transform: translateY(-20px);
-}
-
-.social_logo {
-  border: blue;
+.social_logo:hover {
+  filter: invert(31%) sepia(78%) saturate(1211%) brightness(107%) contrast(106%);
 }
 
 /*# sourceMappingURL=style.css.map */
