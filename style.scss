@@ -274,11 +274,19 @@ nav {
 
 .servicos_conteudo_item {
     width: 100%;
-    background-color: var(--cinzasobre);
+    background-color:var(--branco);
     border-radius: 8px;
     margin-bottom: 15px; 
     padding-bottom: 15px;
+    height: 300px;
 }
+  
+  .card-detalhe {
+    background-color:var(--cinzanav);
+    margin-top: -20px;
+    padding-top: 15px;
+    border-radius: 0 0 8px 8px;
+  }
 
 .conteudo_item_detalhe {
     display: flex;
