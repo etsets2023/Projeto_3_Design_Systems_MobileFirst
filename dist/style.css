@@ -312,12 +312,6 @@ nav {
   flex-direction: column;
 }
 
-.seta {
-  position: absolute;
-  margin-top: 6px;
-  color: var(--branco);
-}
-
 .formulario {
   width: 100%;
   padding: 15px;
@@ -346,6 +340,10 @@ nav {
 }
 
 input[type=placeholder], [type=date] {
+  color: var(--cinzaplace);
+}
+
+::placeholder {
   color: var(--cinzaplace);
 }
 
@@ -670,7 +668,6 @@ footer p {
 }
 .burger:hover {
   filter: invert(31%) sepia(78%) saturate(1211%) hue-rotate(240deg) brightness(107%) contrast(106%);
-  transform: scale(2);
   cursor: pointer;
 }
 
@@ -679,7 +676,6 @@ footer p {
 }
 .lupa:hover {
   filter: invert(31%) sepia(78%) saturate(1211%) hue-rotate(240deg) brightness(107%) contrast(106%);
-  transform: scale(2);
   cursor: pointer;
 }
 
@@ -699,7 +695,6 @@ footer p {
   transition: all 2s;
 }
 .lorem_botao:hover {
-  transform: scale(1.3);
   background: var(--roxobotao);
   color: var(--branco);
 }
@@ -708,15 +703,13 @@ footer p {
   transition: all 2s;
 }
 .botao_mais:hover {
-  transform: scale(1.3);
-  background: var(--roxobotao);
+  border: 2px solid var(--roxoservicos);
 }
 
 .botato_contrate {
   transition: all 2s;
 }
 .botato_contrate:hover {
-  transform: scale(1.3);
   background: var(--roxobotao);
   color: var(--branco);
 }
@@ -725,16 +718,16 @@ footer p {
   transition: all 2s;
 }
 .botao_concluir:hover {
-  transform: scale(1.3);
-  background: var(--roxobotao);
+  border: 2px solid var(--roxoservicos);
 }
 
 .flecha {
-  transition: all 2s;
+  transition: all 1s;
 }
 .flecha:hover {
   background-color: var(--roxobotao);
   border-radius: 10px;
+  color: var(--branco);
   cursor: pointer;
 }
 
@@ -754,16 +747,20 @@ footer p {
 }
 
 .footer_nav {
-  transition: all 2s;
+  transition: all;
 }
 .footer_nav:hover {
-  border: 4px solid var(--roxobotao);
+  border: 4px solid var(--branco);
   border-left: transparent;
   border-top: transparent;
   border-right: transparent;
 }
 .footer_nav:active {
   color: var(--roxoservicos);
+  border: 4px solid var(--roxoservicos);
+  border-left: transparent;
+  border-top: transparent;
+  border-right: transparent;
 }
 
 .projetos h2, .projetos p {
@@ -806,7 +803,7 @@ footer p {
   }
 }
 .social_logo {
-  transition: all 2s;
+  transition: all 1s;
 }
 .social_logo:hover {
   filter: invert(31%) sepia(78%) saturate(1211%) brightness(107%) contrast(106%);
